@@ -218,7 +218,7 @@ psql -h <host> -p <port> -U <user> -d <database> -f migrations/init.sql
 
 ```bash
 docker build -t tender-service .
-docker run -p 8080:8080 --env-file .env tender-service
+docker run -p 8080:8080 tender-service
 ```
 
 Для тестирования всех перечисленных ручек с использованием `curl`, можно выполнить следующие запросы:
